@@ -48,7 +48,7 @@ namespace LightweightInventory
 
             _harmony = new Harmony(PluginGuid);
             _harmony.PatchAll(typeof(LightweightInventoryPlugin).Assembly);
-            Logger.LogInfo("Lightweight Inventory v1.0.0 loaded");
+            Logger.LogInfo("Lightweight Inventory v1.0.1 loaded");
         }
 
         private static void OnSettingChanged(object sender, EventArgs args)
