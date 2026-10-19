@@ -11,7 +11,7 @@ namespace LightweightInventory
     {
         public const string PluginGuid = "christian.lightweightinventory";
         public const string PluginName = "Lightweight Inventory";
-        public const string PluginVersion = "1.0.1";
+        public const string PluginVersion = "1.0.2";
 
         internal static ConfigEntry<bool> Enabled;
         internal static ConfigEntry<int> FirstRowIndex;
@@ -48,7 +48,7 @@ namespace LightweightInventory
 
             _harmony = new Harmony(PluginGuid);
             _harmony.PatchAll(typeof(LightweightInventoryPlugin).Assembly);
-            Logger.LogInfo("Lightweight Inventory v1.0.1 loaded");
+            Logger.LogInfo("Lightweight Inventory v1.0.2 loaded");
         }
 
         private static void OnSettingChanged(object sender, EventArgs args)
@@ -75,6 +75,22 @@ namespace LightweightInventory
         {
             UnityEngine.Debug.Log("[LightweightInventory] " + message);
         } */
+        [HarmonyPatch(typeof(Player), "OnSpawned")]
+        private static class PlayerSpawnedPatch
+        {
+            private static void Postfix(Player __instance)
+            {
+                if (__instance == null ||
+                    !ReferenceEquals(__instance, Player.m_localPlayer))
+                    return;
+
+                var inventory = __instance.GetInventory();
+                if (inventory == null) return;
+
+                AccessTools.Method(typeof(Inventory), "UpdateTotalWeight")
+                    ?.Invoke(inventory, null);
+            }
+        }
         private void OnDestroy()
         {
             if (_harmony != null) _harmony.UnpatchSelf();

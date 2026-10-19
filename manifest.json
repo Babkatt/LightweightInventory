@@ -1,6 +1,6 @@
 {
 	"name": "LightweightInventory",
-	"version_number": "1.0.1",
+	"version_number": "1.0.2",
 	"website_url": "https://github.com/Babkatt/LightweightInventory",
 	"description": "Reduce item weight in configurable Valheim inventory rows. Includes feather indicators and SeneaL UI compatibility.",
 	"dependencies": [
