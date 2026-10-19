@@ -11,7 +11,7 @@ namespace LightweightInventory
     {
         public const string PluginGuid = "christian.lightweightinventory";
         public const string PluginName = "Lightweight Inventory";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         internal static ConfigEntry<bool> Enabled;
         internal static ConfigEntry<int> FirstRowIndex;

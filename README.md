@@ -64,4 +64,4 @@ Built using BepInEx and Harmony.
 
 ## Version
 
-**1.0.0 — Initial public release**
+**1.0.1 — Initial public release**

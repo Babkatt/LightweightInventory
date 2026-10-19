@@ -73,7 +73,9 @@ namespace LightweightInventory
         private static void LoadFeather()
         {
             loadAttempted = true;
-            string path = Path.Combine(Paths.PluginPath, "LightweightInventory", "lightenedslot.png");
+            string path = Path.Combine(
+                Path.GetDirectoryName(typeof(FeatherOverlay).Assembly.Location),
+                "lightenedslot.png");
             if (!File.Exists(path))
             {
                 Debug.LogWarning("[LightweightInventory] Missing feather PNG: " + path);
