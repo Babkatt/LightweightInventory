@@ -88,8 +88,7 @@ namespace LightweightInventory
             return index < 0 ? y >= Math.Max(0, height + index) : y >= index - 1;
         }
 
-        // Based on ExtraSlots InventoryInteraction.Inventory_UpdateTotalWeight_ApplyWeightFactor.
-        // Track only the local player's native inventory while its cached weight is being rebuilt.
+
         [HarmonyPatch(typeof(Inventory), "UpdateTotalWeight")]
         private static class UpdateTotalWeightPatch
         {

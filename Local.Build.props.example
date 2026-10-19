@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <ValheimManaged>C:\Path\To\Valheim\valheim_Data\Managed</ValheimManaged>
+    <BepInExCore>C:\Path\To\BepInEx\core</BepInExCore>
+  </PropertyGroup>
+</Project>

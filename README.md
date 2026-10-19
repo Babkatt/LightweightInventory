@@ -35,7 +35,7 @@ Configuration options are available through the generated BepInEx configuration 
 ### Compatibility
 
 - Tested with Valheim 1.0.20.
-- Tested with SeneaL UI 1.2.2 and expanded inventory rows.
+- Tested with SeneaL UI 1.2.3 and expanded inventory rows.
 - Designed for client-side use; no server installation required.
 - Incompatible with ExtraSlots to avoid overlapping lightweight-inventory functionality.
 
