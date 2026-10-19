@@ -64,4 +64,4 @@ Built using BepInEx and Harmony.
 
 ## Version
 
-**1.0.1 — Fixed feather icon loading for Thunderstore/r2modman installations**
+**1.0.2 — Fixed lightweight weight initialization when logging into a character
