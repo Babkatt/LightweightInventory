@@ -64,4 +64,4 @@ Built using BepInEx and Harmony.
 
 ## Version
 
-**1.0.2 — Fixed lightweight weight initialization when logging into a character
+**1.0.2 — Fixed lightweight weight initialization when logging into a character**

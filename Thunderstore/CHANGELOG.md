@@ -1,4 +1,4 @@
-﻿# Changelog
+# Changelog
 
 ## v1.0.2
 - Fixed lightweight item weights not being applied automatically when logging into a character.
